@@ -1,5 +1,39 @@
 # LINE × Dify AIチャットボット
 
+LINEからの質問をDifyへ渡し、生成された回答をLINEへ返す連携Botです。
+
+> 学習作品：外部API連携やWeb開発の学習成果として掲載しています。
+
+[作品一覧](https://github.com/moedaichi0629-ai/landing-page) · [ポートフォリオ](https://moedaichi0629-ai.github.io/landing-page/)
+
+## 解決する課題
+
+**想定利用者：** Difyで作成したAIアプリをLINEから利用したい方
+
+DifyのAIアプリを普段使うLINEから操作できないこと。
+
+## 主な機能
+
+- LINEのテキストをDify APIに転送
+- Difyからの回答をLINEへ返信
+
+## デモ・利用方法
+
+公開デモはありません。LINEチャネルとDifyアプリの設定が必要です。
+
+## 使用技術
+
+Python / Flask / LINE Messaging API / Dify API
+
+## 工夫した点
+
+Dify側のプロンプトやナレッジを変更して用途を切り替えられる連携例です。
+
+## セットアップ・技術詳細
+
+<details>
+<summary>操作方法・構成・設定手順などの詳細を開く</summary>
+
 LINEで送ったメッセージをDify AIに転送し、AIの回答をLINEに返信するチャットボットです。
 
 ## アプリ概要
@@ -96,3 +130,6 @@ line-dify-bot/
 
 - `.env` ファイルはGitに含めないでください（APIキーが漏洩します）
 - `line-bot-sdk` のバージョンは `2.x` を使用しています
+
+</details>
+
